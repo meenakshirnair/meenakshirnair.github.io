@@ -300,6 +300,23 @@ a:hover {
     border-style: solid;
 }
 
+/* Ripple effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 255, 0, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
 /* Work Detail Page */
 .work-list {
     padding: 2rem 0;
@@ -570,6 +587,128 @@ a:hover {
     }
 }
 
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.work-item {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.work-detail {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.about-section {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.contact-method {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.skill-column {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Stagger animations */
+.work-item:nth-child(1) { animation-delay: 0.1s; }
+.work-item:nth-child(2) { animation-delay: 0.2s; }
+.work-item:nth-child(3) { animation-delay: 0.3s; }
+.work-item:nth-child(4) { animation-delay: 0.4s; }
+
+.work-detail:nth-child(1) { animation-delay: 0.1s; }
+.work-detail:nth-child(2) { animation-delay: 0.2s; }
+.work-detail:nth-child(3) { animation-delay: 0.3s; }
+.work-detail:nth-child(4) { animation-delay: 0.4s; }
+.work-detail:nth-child(5) { animation-delay: 0.5s; }
+
+.about-section:nth-child(1) { animation-delay: 0.1s; }
+.about-section:nth-child(2) { animation-delay: 0.2s; }
+.about-section:nth-child(3) { animation-delay: 0.3s; }
+.about-section:nth-child(4) { animation-delay: 0.4s; }
+.about-section:nth-child(5) { animation-delay: 0.5s; }
+
+.contact-method:nth-child(1) { animation-delay: 0.1s; }
+.contact-method:nth-child(2) { animation-delay: 0.2s; }
+.contact-method:nth-child(3) { animation-delay: 0.3s; }
+.contact-method:nth-child(4) { animation-delay: 0.4s; }
+
+.skill-column:nth-child(1) { animation-delay: 0.1s; }
+.skill-column:nth-child(2) { animation-delay: 0.2s; }
+.skill-column:nth-child(3) { animation-delay: 0.3s; }
+
+/* Smooth transitions */
+.work-item,
+.work-detail,
+.contact-method {
+    transition: all 0.3s ease;
+}
+
+.work-item:hover,
+.contact-method:hover {
+    transform: translateY(-5px);
+}
+
+/* Text animation on hover */
+.nav-link::after {
+    transition: width 0.3s ease;
+}
+
+.cta-button {
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateX(5px);
+    border-style: solid;
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
@@ -599,5 +738,15 @@ a:hover {
 
     .contact-method {
         padding: 1.5rem;
+    }
+
+    /* Reduce animation delays on mobile */
+    .fade-in-up,
+    .work-item,
+    .work-detail,
+    .about-section,
+    .contact-method,
+    .skill-column {
+        animation-duration: 0.4s;
     }
 }
