@@ -1,45 +1,54 @@
 # Meenakshi Rajeev Nair - Portfolio
 
-A modern, sophisticated portfolio website showcasing my work as a Business Analyst and Data Strategist.
+A minimalistic, clean portfolio website inspired by the yousinix design aesthetic. Built with HTML, CSS, and vanilla JavaScript.
 
-## 🎨 Design Features
+## Design Philosophy
 
-- **Modern Gradient Design** - Navy to teal gradient with purple accents
-- **Smooth Animations** - Floating cards, fade-in effects, and parallax scrolling
-- **Responsive Layout** - Fully responsive on mobile, tablet, and desktop
-- **Interactive Elements** - Hover effects, smooth scrolling, and dynamic navbar
-- **Custom Visual Assets** - Generated analytics visualizations and patterns
+This portfolio embraces minimalism with a focus on content and clarity. The design features:
 
-## 📑 Sections
+- **Clean, minimal aesthetic** - Black background with green accents
+- **Multipage structure** - Organized content across Home, Work, About, and Contact pages
+- **Dashed borders** - Inspired by yousinix design language
+- **Typography-focused** - Clear hierarchy and readability
+- **Responsive design** - Works perfectly on all devices
 
-1. **Hero** - Eye-catching introduction with floating cards
-2. **About** - Background and key statistics
-3. **Work** - Featured projects with descriptions and technologies
-4. **Skills** - Organized by category (Business Analysis, Data & Analytics, Tools)
-5. **Experience** - Timeline of professional background
-6. **Contact** - Multiple ways to get in touch
+## Pages
 
-## 🛠️ Technologies
+1. **Home** (`index.html`) - Introduction and featured work overview
+2. **Work** (`work.html`) - Detailed project descriptions and case studies
+3. **About** (`about.html`) - Background, experience, education, and skills
+4. **Contact** (`contact.html`) - Multiple ways to get in touch
+
+## Color Palette
+
+- **Background**: `#0a0a0a` (Deep black)
+- **Text**: `#e0e0e0` (Light gray)
+- **Muted Text**: `#888` (Medium gray)
+- **Accent**: `#00ff00` (Neon green)
+- **Borders**: `#1a1a1a` (Subtle dark)
+
+## Technologies
 
 - HTML5
-- CSS3 (with animations and gradients)
-- Vanilla JavaScript (with Intersection Observer API)
-- Responsive Design
-- Custom Fonts (Sora, Space Mono)
+- CSS3 (with responsive design)
+- Vanilla JavaScript
+- Inter font family
+- No build tools or frameworks required
 
-## 🚀 Live Demo
+## Features
+
+- Sticky navigation with active page indicator
+- Smooth scrolling
+- Hover effects on interactive elements
+- Mobile-responsive layout
+- Clean, semantic HTML structure
+- Fast loading and performance
+
+## Live Demo
 
 Visit: https://meenakshirnair.github.io
 
-## 📊 Key Highlights
-
-- **3+ Years** of professional experience
-- **25%** process improvement at EY
-- **15%** user engagement increase
-- **4.0 GPA** in Master's program
-- **Multiple Certifications** in Cloud and AI
-
-## 📧 Contact
+## Contact
 
 - **Email**: meenakshirnair712@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/meenakshi-rajeev-nair-43301b248
@@ -49,4 +58,4 @@ Visit: https://meenakshirnair.github.io
 
 ---
 
-© 2025 Meenakshi Rajeev Nair. Crafted with data and strategy.
+© 2025 Meenakshi Rajeev Nair. Minimalist design, maximum impact.

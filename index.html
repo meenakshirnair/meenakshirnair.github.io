@@ -3,305 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meenakshi Rajeev Nair | Business Analyst & Data Strategist</title>
-    <meta name="description" content="Business Analyst transforming data into strategic insights. Bridging software engineering and business intelligence.">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Meenakshi Rajeev Nair | Business Analyst</title>
+    <meta name="description" content="Business Analyst transforming data into strategic insights.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-bg"></div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <span class="logo-symbol">◆</span>
-                <span>Meenakshi</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#work" class="nav-link">Work</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <a href="/" class="logo">meenakshi</a>
+            <ul class="nav-links">
+                <li><a href="/">home</a></li>
+                <li><a href="/work.html">work</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/contact.html">contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Transforming</span> Business Problems Into
-                    <span class="gradient-text">Data-Driven</span> Solutions
-                </h1>
-                <p class="hero-subtitle">Business Analyst | Data Strategist | Problem Solver</p>
-                <p class="hero-description">
-                    I bridge the gap between technical innovation and business strategy. With a foundation in software engineering and expertise in analytics, I help organizations make smarter decisions through data.
-                </p>
-                <div class="hero-cta">
-                    <a href="#work" class="btn btn-primary">Explore My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-icon">📊</div>
-                    <p>Data Analytics</p>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon">🎯</div>
-                    <p>Strategy</p>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon">💡</div>
-                    <p>Insights</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main class="container">
+        <section class="intro">
+            <h1>meenakshi</h1>
+            <p>Business Analyst | Data Strategist | Problem Solver</p>
+            <p class="description">
+                I transform ambiguous business problems into structured analytical frameworks. 
+                With a foundation in software engineering and expertise in business analysis, 
+                I bridge the gap between technical teams and business stakeholders.
+            </p>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        I'm a Business Analyst with 3+ years of experience transforming ambiguous business challenges into structured analytical frameworks. My unique background—starting as a software engineer and transitioning into business analysis—gives me a distinctive perspective on solving complex problems.
-                    </p>
-                    <p>
-                        At Ernst & Young, I led initiatives that reduced manual processes by 25% and increased user engagement by 15% through data-driven optimization. I'm passionate about uncovering insights hidden in data and translating them into actionable business strategies.
-                    </p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>25%</h3>
-                            <p>Process Improvement</p>
-                        </div>
-                        <div class="stat">
-                            <h3>4.0</h3>
-                            <p>Master's GPA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://private-us-east-1.manuscdn.com/sessionFile/ldCQYwEMGheSBSnfQu6Z7Z/sandbox/dAPBHg797E5vV5GsdiojL8-img-3_1770502925000_na1fn_YW5hbHl0aWNzLXZpc3VhbGl6YXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvbGRDUVl3RU1HaGVTQlNuZlF1Nlo3Wi9zYW5kYm94L2RBUEJIZzc5N0U1dlY1R3NkaW9qTDgtaW1nLTNfMTc3MDUwMjkyNTAwMF9uYTFmbl9ZVzVoYkhsMGFXTnpMWFpwYzNWaGJHbDZZWFJwYjI0LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Y5hc5CN-97zMMthW~1Vpn1F8If1SIw4wPYNS9yhgQNdfehLIyfyR8x3dzXjLPXA5PuzoTREDAxASGdAsMQGQNy~NEtJ~WgoJ08y~WUXchaiOxJ0BUc0xnzki3ykSzihO9JtIqtJxKgRLCmBVbM4-LILaw-EPUyywH9CFCKGBEKjVKuC0VxZ19rKS9ememLMJ-VIo9FD5TW~smI-FFBW89ERC1incuzFqw6hWAVA0Hrt15-dKjU9QFjv1n4oY-4aZ3w6p2JWjU-EoGfRfSvhOFB7bHasjaiF3QsOv6e-h0f2VNVxjb3OpFPOuXgdGU56jZWBpj3C-7GFeX2AumOS6sQ__" alt="Analytics Visualization">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="work">
-        <div class="container">
-            <h2 class="section-title">Featured Work</h2>
+        <section class="featured-work">
+            <h2>Featured Work</h2>
             <div class="work-grid">
-                <article class="work-card">
-                    <div class="work-header">
-                        <h3>Enterprise Business Analytics Capstone</h3>
-                        <span class="work-year">2025</span>
-                    </div>
-                    <p class="work-description">
-                        Translated open-ended business problems into structured analytical questions. Analyzed multi-source datasets using SQL and Python to identify trends and optimization opportunities.
-                    </p>
-                    <div class="work-tags">
-                        <span>SQL</span>
-                        <span>Python</span>
-                        <span>Analytics</span>
-                        <span>Dashboards</span>
-                    </div>
+                <article class="work-item">
+                    <div class="work-marker">→</div>
+                    <h3>Enterprise Analytics Capstone</h3>
+                    <p>Translated business problems into analytical frameworks using SQL and Python.</p>
+                    <span class="tech">SQL • Python • Analytics</span>
                 </article>
 
-                <article class="work-card">
-                    <div class="work-header">
-                        <h3>AI Request Routing Optimization</h3>
-                        <span class="work-year">2024</span>
-                    </div>
-                    <p class="work-description">
-                        Built a decision optimization model using linear programming to dynamically route requests based on cost, capacity, and SLA constraints. Improved backend utilization and reduced compute costs.
-                    </p>
-                    <div class="work-tags">
-                        <span>Optimization</span>
-                        <span>Python</span>
-                        <span>Linear Programming</span>
-                    </div>
+                <article class="work-item">
+                    <div class="work-marker">→</div>
+                    <h3>AI Request Routing</h3>
+                    <p>Built optimization model for cost reduction and SLA compliance using linear programming.</p>
+                    <span class="tech">Optimization • Python • Gurobi</span>
                 </article>
 
-                <article class="work-card">
-                    <div class="work-header">
-                        <h3>CalCount - Predictive Analytics App</h3>
-                        <span class="work-year">2025</span>
-                    </div>
-                    <p class="work-description">
-                        Designed a mobile application with predictive modeling roadmap. Engineered time-series features for weight trend prediction and calorie adherence analysis.
-                    </p>
-                    <div class="work-tags">
-                        <span>Mobile App</span>
-                        <span>Time-Series</span>
-                        <span>Predictive Analytics</span>
-                    </div>
+                <article class="work-item">
+                    <div class="work-marker">→</div>
+                    <h3>EY Process Automation</h3>
+                    <p>Reduced manual effort by 25% through process optimization and automation initiatives.</p>
+                    <span class="tech">Process Improvement • KPI • Analytics</span>
                 </article>
 
-                <article class="work-card">
-                    <div class="work-header">
-                        <h3>EY Business Process Automation</h3>
-                        <span class="work-year">2022-2024</span>
-                    </div>
-                    <p class="work-description">
-                        Analyzed end-to-end processes to identify automation opportunities. Reduced manual effort by 25% and increased chatbot engagement by 15% through data-driven optimization.
-                    </p>
-                    <div class="work-tags">
-                        <span>Process Improvement</span>
-                        <span>Requirements Gathering</span>
-                        <span>KPI Definition</span>
-                    </div>
+                <article class="work-item">
+                    <div class="work-marker">→</div>
+                    <h3>CalCount App</h3>
+                    <p>Designed mobile app with predictive analytics roadmap for health tracking.</p>
+                    <span class="tech">Mobile • Time-Series • Forecasting</span>
                 </article>
             </div>
-        </div>
-    </section>
+            <a href="/work.html" class="view-more">view more →</a>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h3 class="skill-category">Business Analysis</h3>
-                    <ul class="skill-list">
+        <section class="skills-preview">
+            <h2>Skills</h2>
+            <div class="skills-columns">
+                <div class="skill-column">
+                    <h3>Business Analysis</h3>
+                    <ul>
                         <li>Requirements Gathering</li>
                         <li>Stakeholder Management</li>
                         <li>KPI Definition</li>
                         <li>Process Mapping</li>
-                        <li>Decision Support</li>
                     </ul>
                 </div>
-
-                <div class="skill-group">
-                    <h3 class="skill-category">Data & Analytics</h3>
-                    <ul class="skill-list">
-                        <li>SQL & Database Design</li>
-                        <li>Python (Pandas, NumPy)</li>
+                <div class="skill-column">
+                    <h3>Data & Analytics</h3>
+                    <ul>
+                        <li>SQL & Python</li>
                         <li>Time-Series Forecasting</li>
                         <li>Cohort Analysis</li>
                         <li>A/B Testing</li>
                     </ul>
                 </div>
-
-                <div class="skill-group">
-                    <h3 class="skill-category">Tools & Platforms</h3>
-                    <ul class="skill-list">
+                <div class="skill-column">
+                    <h3>Tools</h3>
+                    <ul>
                         <li>Tableau & Power BI</li>
-                        <li>Grafana</li>
                         <li>Excel (Advanced)</li>
                         <li>Azure DevOps</li>
                         <li>Git & Version Control</li>
                     </ul>
                 </div>
-
-                <div class="skill-group">
-                    <h3 class="skill-category">Certifications</h3>
-                    <ul class="skill-list">
-                        <li>OCI Data Science Professional</li>
-                        <li>OCI Generative AI Professional</li>
-                        <li>Master's in Business Analytics</li>
-                        <li>B.Tech in Engineering</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Software Engineer – Business Analyst</h3>
-                        <p class="company">Ernst & Young (EY)</p>
-                        <p class="period">Jul 2022 – Jul 2024 | India</p>
-                        <ul>
-                            <li>Reduced manual effort by 25% through process automation initiatives</li>
-                            <li>Increased user engagement by 15% via data-driven chatbot optimization</li>
-                            <li>Partnered with stakeholders to define KPIs and translate business needs</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Intern – Assistive Technology</h3>
-                        <p class="company">National Institute of Speech and Hearing</p>
-                        <p class="period">Jun 2019 – Aug 2019 | Kerala, India</p>
-                        <ul>
-                            <li>Supported development of assistive software for accessibility</li>
-                            <li>Captured usability requirements and prioritized improvements</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Software Engineering Intern</h3>
-                        <p class="company">KELTRON</p>
-                        <p class="period">Feb 2018 – Nov 2018 | Kerala, India</p>
-                        <ul>
-                            <li>Debugged and optimized 10+ modules in enterprise systems</li>
-                            <li>Improved system reliability and deployment readiness</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <p class="contact-subtitle">
-                I'm always interested in discussing analytics challenges, business problems, and collaboration opportunities.
-            </p>
-            <div class="contact-methods">
-                <a href="mailto:meenakshirnair712@gmail.com" class="contact-card">
-                    <span class="contact-icon">✉</span>
-                    <h3>Email</h3>
-                    <p>meenakshirnair712@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/meenakshi-rajeev-nair-43301b248" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <span class="contact-icon">in</span>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                </a>
-                <a href="https://github.com/meenakshirnair" target="_blank" rel="noopener noreferrer" class="contact-card">
-                    <span class="contact-icon">⚙</span>
-                    <h3>GitHub</h3>
-                    <p>View my projects</p>
-                </a>
-            </div>
-        </div>
-    </section>
+        <section class="cta">
+            <h2>Let's Connect</h2>
+            <p>Interested in discussing analytics or collaboration?</p>
+            <a href="/contact.html" class="cta-button">get in touch</a>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Meenakshi Rajeev Nair. Crafted with data and strategy.</p>
-            <p class="footer-location">Tempe, AZ | (623) 920-6782</p>
-        </div>
+        <p>&copy; 2025 Meenakshi Rajeev Nair</p>
     </footer>
 
     <script src="script.js"></script>
