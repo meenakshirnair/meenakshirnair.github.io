@@ -1,199 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work | Meenakshi Rajeev Nair</title>
-    <meta name="description" content="Featured projects and work by Meenakshi.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Meenakshi Rajeev Nair — analytics, machine learning, product, and accessibility." />
+  <title>Work | Meenakshi Rajeev Nair</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">meenakshi</a>
-            <ul class="nav-links">
-                <li><a href="/">home</a></li>
-                <li><a href="/work.html" class="active">work</a></li>
-                <li><a href="/about.html">about</a></li>
-                <li><a href="/contact.html">contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Main Content -->
-    <main class="container">
-        <section class="page-header">
-            <h1 class="fade-in-up">Work</h1>
-            <p class="fade-in-up" style="animation-delay: 0.1s;">Projects and initiatives that showcase my expertise in business analysis and data strategy.</p>
-        </section>
+  <!-- ── NAV ── -->
+  <nav class="nav nav-light" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Meenakshi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <section class="work-list fade-in-up">
-            <article class="work-detail fade-in-up">
-                <div class="work-header">
-                    <h2><a href="https://github.com/meenakshirnair/capstone" target="_blank" rel="noopener noreferrer">Enterprise Business Analytics Capstone</a></h2>
-                    <span class="year">2025</span>
-                </div>
-                <div class="award-badge">🏆 Outstanding Capstone Team Award</div>
-                <p class="work-description">
-                    Comprehensive capstone project translating complex business problems into structured analytical frameworks. 
-                    Conducted end-to-end analysis of multi-source datasets to identify trends, risks, and optimization opportunities. 
-                    Developed interactive dashboards and delivered stakeholder-ready insights to support strategic and operational decision-making. 
-                    Recognized with the Outstanding Capstone Team Award for exceptional project execution and impact.
-                </p>
-                <div class="work-meta">
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Analytics</span>
-                    <span class="tech-tag">Dashboards</span>
-                    <span class="tech-tag">Business Intelligence</span>
-                </div>
-            </article>
+  <main>
 
-            <article class="work-detail fade-in-up">
-                <div class="work-header">
-                    <h2><a href="https://github.com/meenakshirnair/final-project-adm" target="_blank" rel="noopener noreferrer">AI Request Routing Optimization</a></h2>
-                    <span class="year">2024</span>
-                </div>
-                <p class="work-description">
-                    Advanced data management project focused on optimizing AI request routing across multiple backends. 
-                    Analyzed synthetic AI request datasets to identify patterns in compute costs, latency, and service-level compliance. 
-                    Developed optimization models to dynamically route requests based on cost, capacity, and SLA constraints. 
-                    Applied decision optimization techniques using Python and Excel to evaluate trade-offs and improve resource utilization while maintaining service quality.
-                </p>
-                <div class="work-meta">
-                    <span class="tech-tag">Data Management</span>
-                    <span class="tech-tag">Optimization</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Cost Analysis</span>
-                    <span class="tech-tag">SLA Compliance</span>
-                </div>
-            </article>
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Work</span>
+        <h1>Projects that shaped<br>my thinking.</h1>
+      </div>
+    </section>
 
-            <article class="work-detail fade-in-up">
-                <div class="work-header">
-                    <h2><a href="https://github.com/meenakshirnair/final-project-ai-ds" target="_blank" rel="noopener noreferrer">Lost Object Detection</a></h2>
-                    <span class="year">2023</span>
-                </div>
-                <p class="work-description">
-                    Computer vision system designed to help ASU students recover lost belongings on campus. 
-                    Developed an intelligent object detection and classification system using deep learning models and advanced image processing techniques. 
-                    Implemented Python-based solution with real-time detection capabilities to identify and catalog lost items. 
-                    Integrated with campus infrastructure to provide students with an effective tool for locating and recovering their possessions.
-                </p>
-                <div class="work-meta">
-                    <span class="tech-tag">Computer Vision</span>
-                    <span class="tech-tag">Deep Learning</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Object Detection</span>
-                    <span class="tech-tag">Image Processing</span>
-                </div>
-            </article>
+    <!-- ── PROJECTS ── -->
+    <section class="projects-section">
+      <div class="container">
 
-            <article class="work-detail fade-in-up">
-                <div class="work-header">
-                    <h2><a href="https://github.com/meenakshirnair/Calcount" target="_blank" rel="noopener noreferrer">CalCount - Calorie Tracking App</a></h2>
-                    <span class="year">2025-2026</span>
-                </div>
-                <p class="work-description">
-                    Full-stack iOS mobile application for comprehensive calorie and nutrition tracking. 
-                    Designed intuitive user interface with structured data capture for food logging and nutritional analysis. 
-                    Architected backend system with predictive modeling capabilities for weight trend forecasting and calorie adherence analysis. 
-                    Engineered time-series features and evaluation metrics to support future machine learning enhancements and personalized health insights.
-                </p>
-                <div class="work-meta">
-                    <span class="tech-tag">iOS Development</span>
-                    <span class="tech-tag">Swift</span>
-                    <span class="tech-tag">Predictive Analytics</span>
-                    <span class="tech-tag">Time-Series Forecasting</span>
-                    <span class="tech-tag">Health Tech</span>
-                </div>
-            </article>
+        <!-- 1. Capstone -->
+        <article class="project-item" data-animate>
+          <div class="project-year">2025</div>
+          <div class="project-body">
+            <h3><a href="https://github.com/meenakshirnair/capstone" target="_blank" rel="noopener">Enterprise Business Analytics Capstone</a></h3>
+            <span class="award-badge">&#9733; Outstanding Capstone Team Award</span>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">Analytics</span>
+              <span class="tag">Dashboards</span>
+              <span class="tag">Business Intelligence</span>
+            </div>
+            <p class="project-desc">
+              Comprehensive capstone translating complex, multi-source business problems into
+              structured analytical frameworks. Conducted end-to-end analysis to identify trends,
+              risks, and optimisation opportunities, then developed interactive dashboards that
+              delivered stakeholder-ready insights for strategic and operational decision-making.
+              Recognised with the Outstanding Capstone Team Award for exceptional project execution
+              and the clarity of our findings.
+            </p>
+            <a href="https://github.com/meenakshirnair/capstone" class="project-gh" target="_blank" rel="noopener">View on GitHub ›</a>
+          </div>
+        </article>
 
-            <article class="work-detail fade-in-up">
-                <div class="work-header">
-                    <h2><a href="https://github.com/meenakshirnair/final-project-DPA" target="_blank" rel="noopener noreferrer">Customer Churn Prediction and House Rent Forecasting</a></h2>
-                    <span class="year">2024</span>
-                </div>
-                <p class="work-description">
-                    Dual machine learning project combining customer churn prediction and real estate price forecasting. 
-                    Engineered comprehensive preprocessing pipeline including SMOTE for class imbalance, outlier detection and removal, and multi-strategy encoding. 
-                    Achieved 84% accuracy in customer churn prediction using Random Forest classifier on imbalanced customer lifecycle data. 
-                    Developed polynomial regression model for house rent price forecasting achieving 81% accuracy on real estate datasets with multiple features.
-                </p>
-                <div class="work-meta">
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Classification</span>
-                    <span class="tech-tag">Regression</span>
-                    <span class="tech-tag">SMOTE</span>
-                    <span class="tech-tag">Feature Engineering</span>
-                </div>
-            </article>
+        <!-- 2. AI Routing -->
+        <article class="project-item" data-animate>
+          <div class="project-year">2024</div>
+          <div class="project-body">
+            <h3><a href="https://github.com/meenakshirnair/final-project-adm" target="_blank" rel="noopener">AI Request Routing Optimisation</a></h3>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Optimisation</span>
+              <span class="tag">Gurobi</span>
+              <span class="tag">Cost Analysis</span>
+              <span class="tag">SLA Compliance</span>
+            </div>
+            <p class="project-desc">
+              Built an optimisation model for routing AI requests across multiple backends to
+              minimise compute cost while maintaining SLA compliance. Analysed synthetic AI
+              request datasets to identify patterns in cost, latency, and service-level
+              performance, then developed dynamic routing logic using Python and linear
+              programming to evaluate real-world trade-offs and improve resource utilisation.
+            </p>
+            <a href="https://github.com/meenakshirnair/final-project-adm" class="project-gh" target="_blank" rel="noopener">View on GitHub ›</a>
+          </div>
+        </article>
 
-            <article class="work-detail fade-in-up">
-                <div class="work-header">
-                    <h2><a href="https://github.com/meenakshirnair/final-project-MLB" target="_blank" rel="noopener noreferrer">Employee Attrition Prediction</a></h2>
-                    <span class="year">2024</span>
-                </div>
-                <p class="work-description">
-                    Advanced machine learning project predicting employee attrition with exceptional performance metrics (91.9% accuracy, AUC 0.97). 
-                    Engineered comprehensive HR analytics pipeline processing 1,470 employee records across 35 features with scaling, encoding, and SMOTE balancing. 
-                    Developed multiple classification models and identified critical attrition drivers: job involvement, job level, work-life balance, and stock options. 
-                    Delivered actionable insights to inform HR retention strategies and workforce planning initiatives.
-                </p>
-                <div class="work-meta">
-                    <span class="tech-tag">Machine Learning</span>
-                    <span class="tech-tag">Classification</span>
-                    <span class="tech-tag">HR Analytics</span>
-                    <span class="tech-tag">SMOTE</span>
-                    <span class="tech-tag">AUC: 0.97</span>
-                </div>
-            </article>
+        <!-- 3. Churn + Rent -->
+        <article class="project-item" data-animate>
+          <div class="project-year">2024</div>
+          <div class="project-body">
+            <h3><a href="https://github.com/meenakshirnair/final-project-DPA" target="_blank" rel="noopener">Customer Churn Prediction &amp; House Rent Forecasting</a></h3>
+            <div class="tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Python</span>
+              <span class="tag">SMOTE</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">Feature Engineering</span>
+            </div>
+            <p class="project-desc">
+              Dual machine learning project combining customer retention analysis with real
+              estate price forecasting. Built a full preprocessing pipeline with SMOTE for
+              class imbalance, outlier removal, and multi-strategy encoding. Achieved 84%
+              accuracy on customer churn prediction using Random Forest, and 81% accuracy
+              on house rent forecasting using polynomial regression.
+            </p>
+            <a href="https://github.com/meenakshirnair/final-project-DPA" class="project-gh" target="_blank" rel="noopener">View on GitHub ›</a>
+          </div>
+        </article>
 
-            <article class="work-detail fade-in-up">
-                <div class="work-header">
-                    <h2>Signum: Sign-to-Speech Conversion Software</h2>
-                    <span class="year">2023</span>
-                </div>
-                <p class="work-description">
-                    Accessibility-focused deep learning application translating American Sign Language (ASL) into spoken English. 
-                    Architected 3D-CNN model with sophisticated video preprocessing pipeline including face detection, region cropping, and frame normalization. 
-                    Engineered end-to-end system integrating computer vision for sign recognition with MATLAB Audio Toolbox and third-party speech synthesis APIs. 
-                    Delivered inclusive technology solution enhancing communication accessibility for deaf and hard-of-hearing individuals.
-                </p>
-                <div class="work-meta">
-                    <span class="tech-tag">Deep Learning</span>
-                    <span class="tech-tag">3D-CNN</span>
-                    <span class="tech-tag">Computer Vision</span>
-                    <span class="tech-tag">Video Processing</span>
-                    <span class="tech-tag">Accessibility</span>
-                </div>
-            </article>
+        <!-- 4. Employee Attrition -->
+        <article class="project-item" data-animate>
+          <div class="project-year">2024</div>
+          <div class="project-body">
+            <h3><a href="https://github.com/meenakshirnair/final-project-MLB" target="_blank" rel="noopener">Employee Attrition Prediction</a></h3>
+            <div class="tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Python</span>
+              <span class="tag">SMOTE</span>
+              <span class="tag">HR Analytics</span>
+              <span class="tag">AUC 0.97</span>
+            </div>
+            <p class="project-desc">
+              HR analytics model predicting employee attrition with 91.9% accuracy and AUC
+              0.97 across 1,470 employee records with 35 features. Applied scaling, encoding,
+              and SMOTE balancing to handle class imbalance. Identified critical attrition
+              drivers — job involvement, job level, work-life balance, and stock options —
+              to deliver actionable insights for HR retention strategy and workforce planning.
+            </p>
+            <a href="https://github.com/meenakshirnair/final-project-MLB" class="project-gh" target="_blank" rel="noopener">View on GitHub ›</a>
+          </div>
+        </article>
 
+        <!-- 5. CalCount -->
+        <article class="project-item" data-animate>
+          <div class="project-year">2025</div>
+          <div class="project-body">
+            <h3><a href="https://github.com/meenakshirnair/Calcount" target="_blank" rel="noopener">CalCount — Calorie Tracking App</a></h3>
+            <div class="tags">
+              <span class="tag">iOS</span>
+              <span class="tag">Swift</span>
+              <span class="tag">Predictive Analytics</span>
+              <span class="tag">Time-Series</span>
+              <span class="tag">Health Tech</span>
+            </div>
+            <p class="project-desc">
+              Full-stack iOS mobile app for calorie and nutrition tracking with a predictive
+              modelling roadmap. Designed an intuitive interface for structured food logging,
+              architected the backend with time-series features for weight trend forecasting,
+              and engineered evaluation metrics to support future ML-powered personalised
+              health insights.
+            </p>
+            <a href="https://github.com/meenakshirnair/Calcount" class="project-gh" target="_blank" rel="noopener">View on GitHub ›</a>
+          </div>
+        </article>
 
-        </section>
-    </main>
+        <!-- 6. Lost Object Detection -->
+        <article class="project-item" data-animate>
+          <div class="project-year">2023</div>
+          <div class="project-body">
+            <h3><a href="https://github.com/meenakshirnair/final-project-ai-ds" target="_blank" rel="noopener">Lost Object Detection</a></h3>
+            <div class="tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Python</span>
+              <span class="tag">Object Detection</span>
+              <span class="tag">Image Processing</span>
+            </div>
+            <p class="project-desc">
+              Computer vision system designed to help ASU students recover lost belongings on
+              campus. Built an intelligent object detection and classification system using deep
+              learning models and advanced image processing. Implemented real-time detection
+              capabilities integrated with campus infrastructure to provide students with an
+              effective recovery tool.
+            </p>
+            <a href="https://github.com/meenakshirnair/final-project-ai-ds" class="project-gh" target="_blank" rel="noopener">View on GitHub ›</a>
+          </div>
+        </article>
 
-    <style>
-        .award-badge {
-            display: inline-block;
-            background-color: rgba(34, 197, 94, 0.1);
-            color: var(--accent);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            border: 1px dashed var(--accent);
-        }
-    </style>
+        <!-- 7. Signum -->
+        <article class="project-item" data-animate>
+          <div class="project-year">2023</div>
+          <div class="project-body">
+            <h3>Signum — Sign-to-Speech Conversion</h3>
+            <div class="tags">
+              <span class="tag">Deep Learning</span>
+              <span class="tag">3D-CNN</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Accessibility</span>
+            </div>
+            <p class="project-desc">
+              Accessibility-focused deep learning application translating American Sign Language
+              into spoken English. Architected a 3D-CNN model with a video preprocessing pipeline
+              including face detection, region cropping, and frame normalisation. Integrated MATLAB
+              Audio Toolbox and speech synthesis APIs to deliver an inclusive communication tool
+              for deaf and hard-of-hearing individuals.
+            </p>
+          </div>
+        </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Meenakshi Rajeev Nair</p>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <p class="footer-copy">© <span id="footer-year"></span> Meenakshi Rajeev Nair</p>
+        <ul class="footer-links">
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
