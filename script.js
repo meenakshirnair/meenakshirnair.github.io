@@ -1,99 +1,66 @@
-// Set active nav link based on current page
-document.addEventListener('DOMContentLoaded', function() {
-    const currentPage = window.location.pathname;
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        
-        // Handle root path
-        if (currentPage === '/' && href === '/') {
-            link.classList.add('active');
-        } else if (currentPage.includes(href) && href !== '/') {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
+/* ============================================================
+   MEENAKSHI RAJEEV NAIR — Portfolio Scripts
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  /* ── Mobile nav toggle ── */
+  const toggle = document.getElementById('nav-toggle');
+  const links  = document.getElementById('nav-links');
+
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', links.classList.contains('open'));
     });
 
-    // Initialize scroll animations
-    observeElements();
-});
+    // Close on link click
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => links.classList.remove('open'));
+    });
+  }
 
-// Intersection Observer for scroll-triggered animations
-function observeElements() {
+  /* ── Nav colour shift (home page only) ── */
+  const nav = document.getElementById('main-nav');
+  if (nav && document.body.dataset.page === 'home') {
+    const hero   = document.querySelector('.hero');
+    const heroH  = hero ? hero.offsetHeight : 400;
+
+    const update = () => {
+      if (window.scrollY > heroH - 100) {
+        nav.classList.remove('nav-dark');
+        nav.classList.add('nav-light');
+      } else {
+        nav.classList.remove('nav-light');
+        nav.classList.add('nav-dark');
+      }
+    };
+
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+
+  /* ── Scroll reveal ── */
+  const animEls = document.querySelectorAll('[data-animate]');
+  if (animEls.length && 'IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    });
-
-    // Observe all animated elements
-    document.querySelectorAll('.work-item, .work-detail, .about-section, .contact-method, .skill-column').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(el);
-    });
-}
-
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
         }
-    });
-});
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-// Add hover animation to interactive elements
-document.querySelectorAll('.work-item, .contact-method').forEach(el => {
-    el.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px)';
-    });
-    el.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
-    });
-});
+    animEls.forEach(el => observer.observe(el));
+  } else {
+    // Fallback: show everything
+    animEls.forEach(el => el.classList.add('in-view'));
+  }
 
-// Smooth transitions for buttons
-document.querySelectorAll('.cta-button, .view-more').forEach(btn => {
-    btn.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateX(5px)';
-    });
-    btn.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateX(0)';
-    });
-});
+  /* ── Current year in footer ── */
+  const yearEl = document.getElementById('footer-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// Add ripple effect on click for buttons
-document.querySelectorAll('.cta-button, .btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        const ripple = document.createElement('span');
-        ripple.classList.add('ripple');
-        this.appendChild(ripple);
-        
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
-        
-        ripple.style.width = ripple.style.height = size + 'px';
-        ripple.style.left = x + 'px';
-        ripple.style.top = y + 'px';
-        
-        setTimeout(() => ripple.remove(), 600);
-    });
-});
-
-console.log('Portfolio loaded with animations');
+})();
