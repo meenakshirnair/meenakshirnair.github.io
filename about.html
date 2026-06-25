@@ -1,147 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Meenakshi Rajeev Nair</title>
-    <meta name="description" content="About Meenakshi - Business Analyst and Data Strategist.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Meenakshi Rajeev Nair — from software engineer at EY to business analyst and data strategist." />
+  <title>About | Meenakshi Rajeev Nair</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">meenakshi</a>
-            <ul class="nav-links">
-                <li><a href="/">home</a></li>
-                <li><a href="/work.html">work</a></li>
-                <li><a href="/about.html" class="active">about</a></li>
-                <li><a href="/contact.html">contact</a></li>
-            </ul>
+
+  <!-- ── NAV ── -->
+  <nav class="nav nav-light" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Meenakshi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">About</span>
+        <h1>The story behind<br>the work.</h1>
+      </div>
+    </section>
+
+    <!-- ── STORY ── -->
+    <section class="story">
+      <div class="container">
+        <div class="story-grid">
+
+          <aside class="story-sticky" data-animate>
+            <p class="story-aside-label">The Transition</p>
+            <blockquote class="sidebar-quote">
+              "The work that wouldn't leave my head wasn't the code.
+              It was the question behind the code."
+            </blockquote>
+          </aside>
+
+          <div class="story-body" data-animate>
+            <p>
+              I started out as a software engineer. At Ernst &amp; Young, I was brought in
+              to build and test enterprise systems — and I was good at it. But I kept
+              noticing things that weren't in my brief.
+            </p>
+            <p>
+              A workflow that everyone followed without questioning why it existed.
+              Patterns in the chatbot data that suggested users weren't behaving the way
+              the team assumed. A broken process that, when you looked closely, wasn't a
+              code problem at all — it was a people-and-incentives problem wearing a
+              technical costume.
+            </p>
+            <p>
+              I didn't stop at noticing. I went deeper, then flagged what I found. And
+              at some point, the question behind the code started to matter more to me
+              than the code itself.
+            </p>
+            <p>
+              That realization led me to Arizona State University's
+              <strong>W.&nbsp;P.&nbsp;Carey School of Business</strong>. I wanted to formalise
+              what I was already doing instinctively — translating messy, ambiguous
+              situations into clear decisions. I graduated with a <strong>4.0 GPA</strong>
+              and a capstone project that won the
+              <strong>Outstanding Capstone Team Award</strong> — not just for what we
+              built, but for how clearly we communicated the story in the data.
+            </p>
+            <p>
+              I'm now looking for a team that values that combination: the technical
+              fluency to understand what the data is actually saying, and the strategic
+              instinct to know what to do with it.
+            </p>
+          </div>
+
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="container">
-        <section class="page-header">
-            <h1 class="fade-in-up">About</h1>
-            <p class="fade-in-up" style="animation-delay: 0.1s;">My journey from software engineering to business analysis.</p>
-        </section>
+    <!-- ── EXPERIENCE ── -->
+    <section class="experience">
+      <div class="container">
+        <h2 data-animate>Professional experience.</h2>
 
-        <section class="about-content fade-in-up">
-            <article class="about-section">
-                <h2>Background</h2>
-                <p>
-                    I'm a Business Analyst with 3+ years of combined industry and internship experience across consulting, analytics, and software delivery environments. 
-                    I have a proven ability to translate ambiguous business problems into structured requirements, KPIs, and analytical insights that support decision-making.
-                </p>
-                <p>
-                    My unique background starting as a software engineer and transitioning into business analysis gives me a distinctive perspective on solving complex problems. 
-                    I understand both the technical constraints and business objectives, which allows me to bridge the gap between technical teams and business stakeholders effectively.
-                </p>
-            </article>
+        <!-- EY -->
+        <div class="exp-item" data-animate>
+          <div class="exp-meta">
+            <span class="exp-co">Ernst &amp; Young (EY)</span>
+            <span class="exp-period">Jul 2022 – Jul 2024</span>
+            <span class="exp-loc">India</span>
+          </div>
+          <div>
+            <p class="exp-title">Software Engineer – Business Analyst</p>
+            <ul class="exp-bullets">
+              <li>Analysed end-to-end business processes to surface automation opportunities, reducing manual effort by 25%.</li>
+              <li>Partnered with stakeholders to define KPIs and translate ambiguous business needs into functional specifications.</li>
+              <li>Analysed chatbot usage patterns to identify unexpected user behaviours; contributed to a 15% increase in user engagement.</li>
+              <li>Prepared stakeholder-ready documentation and insights for leadership decision-making reviews.</li>
+            </ul>
+          </div>
+        </div>
 
-            <article class="about-section">
-                <h2>Professional Experience</h2>
-                <div class="experience-item">
-                    <h3>Software Engineer – Business Analyst</h3>
-                    <p class="role-meta">Ernst & Young (EY) | Jul 2022 – Jul 2024 | India</p>
-                    <ul>
-                        <li>Analyzed end-to-end business processes to identify automation opportunities, reducing manual effort by 25%</li>
-                        <li>Partnered with stakeholders to define KPIs and translate business needs into functional specifications</li>
-                        <li>Supported chatbot initiatives by analyzing usage patterns, contributing to 15% increase in user engagement</li>
-                        <li>Prepared stakeholder-ready documentation and insights for decision-making and leadership reviews</li>
-                    </ul>
-                </div>
+        <!-- NISH -->
+        <div class="exp-item" data-animate>
+          <div class="exp-meta">
+            <span class="exp-co">National Institute of Speech and Hearing</span>
+            <span class="exp-period">Jun 2019 – Aug 2019</span>
+            <span class="exp-loc">Kerala, India</span>
+          </div>
+          <div>
+            <p class="exp-title">Intern — Assistive Technology</p>
+            <ul class="exp-bullets">
+              <li>Supported development of assistive software applications for accessibility.</li>
+              <li>Captured usability requirements and translated observations into prioritised improvements.</li>
+              <li>Supported iterative testing cycles to ensure solutions met accessibility goals.</li>
+            </ul>
+          </div>
+        </div>
 
-                <div class="experience-item">
-                    <h3>Intern – Assistive Technology</h3>
-                    <p class="role-meta">National Institute of Speech and Hearing | Jun 2019 – Aug 2019 | Kerala, India</p>
-                    <ul>
-                        <li>Supported development of assistive software applications for accessibility</li>
-                        <li>Captured usability requirements and translated observations into prioritized improvements</li>
-                        <li>Supported iterative testing cycles to ensure solutions met accessibility goals</li>
-                    </ul>
-                </div>
+        <!-- KELTRON -->
+        <div class="exp-item" data-animate>
+          <div class="exp-meta">
+            <span class="exp-co">KELTRON</span>
+            <span class="exp-period">Feb 2018 – Nov 2018</span>
+            <span class="exp-loc">Kerala, India</span>
+          </div>
+          <div>
+            <p class="exp-title">Software Engineering Intern</p>
+            <ul class="exp-bullets">
+              <li>Supported backend development and testing for large-scale enterprise systems.</li>
+              <li>Assisted in debugging and optimising 10+ modules, improving system reliability.</li>
+              <li>Collaborated with senior engineers to document issues and assess operational impact.</li>
+            </ul>
+          </div>
+        </div>
 
-                <div class="experience-item">
-                    <h3>Software Engineering Intern</h3>
-                    <p class="role-meta">KELTRON | Feb 2018 – Nov 2018 | Kerala, India</p>
-                    <ul>
-                        <li>Supported backend development and testing for large-scale enterprise systems</li>
-                        <li>Assisted in debugging and optimizing 10+ modules, improving system reliability</li>
-                        <li>Collaborated with senior engineers to document issues and assess operational impact</li>
-                    </ul>
-                </div>
-            </article>
+      </div>
+    </section>
 
-            <article class="about-section">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Master of Science in Business Analytics</h3>
-                    <p class="role-meta">Arizona State University – W. P. Carey School of Business | Dec 2025</p>
-                    <p>GPA: 4.00/4.00 | Tempe, AZ</p>
-                </div>
+    <!-- ── EDUCATION ── -->
+    <section class="education">
+      <div class="container">
+        <h2 data-animate>Education.</h2>
+        <div class="edu-grid">
 
-                <div class="education-item">
-                    <h3>Bachelor of Technology in Engineering</h3>
-                    <p class="role-meta">Mar Baselios College of Engineering and Technology | Jun 2022</p>
-                    <p>GPA: 3.02/4.00 | Kerala, India</p>
-                </div>
-            </article>
+          <div class="edu-card" data-animate>
+            <p class="edu-degree">Master of Science in Business Analytics</p>
+            <p class="edu-school">Arizona State University — W.&nbsp;P.&nbsp;Carey School of Business</p>
+            <p class="edu-meta">Tempe, AZ &nbsp;·&nbsp; Dec 2025</p>
+            <div class="edu-gpa">4.00 <small>/ 4.00 GPA</small></div>
+          </div>
 
-            <article class="about-section">
-                <h2>Skills & Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-group">
-                        <h3>Business Analysis</h3>
-                        <p>Requirements gathering, stakeholder analysis, KPI definition, process mapping, decision support</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Data & Analytics</h3>
-                        <p>SQL, Python, time-series forecasting, cohort analysis, A/B testing, data validation, exploratory analysis</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3>BI & Visualization</h3>
-                        <p>Tableau, Power BI, Grafana, Excel (advanced dashboards, executive reporting)</p>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Technology & Platforms</h3>
-                        <p>ETL pipelines, data modeling, Azure DevOps, Azure cloud fundamentals, Azure AI</p>
-                    </div>
-                </div>
-            </article>
+          <div class="edu-card" data-animate>
+            <p class="edu-degree">Bachelor of Technology in Engineering</p>
+            <p class="edu-school">Mar Baselios College of Engineering and Technology</p>
+            <p class="edu-meta">Kerala, India &nbsp;·&nbsp; Jun 2022</p>
+            <div class="edu-gpa">3.02 <small>/ 4.00 GPA</small></div>
+          </div>
 
-            <article class="about-section">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>Oracle Cloud Infrastructure Data Science Professional (2025)</li>
-                    <li>Oracle Cloud Infrastructure Generative AI Professional (2025)</li>
-                    <li>Oracle Cloud Infrastructure Certified AI Foundations Associate (2025)</li>
-                    <li>Microsoft AZ-900: Azure Fundamentals (2023)</li>
-                </ul>
-            </article>
+        </div>
+      </div>
+    </section>
 
-            <article class="about-section">
-                <h2>What I'm Passionate About</h2>
-                <p>
-                    I'm passionate about uncovering insights hidden in data and translating them into actionable business strategies. 
-                    I believe that good analysis starts with asking the right questions, and I enjoy working on problems that require both analytical rigor and creative thinking.
-                </p>
-                <p>
-                    Whether it's optimizing processes, building predictive models, or helping teams make data-driven decisions, 
-                    I'm driven by the impact that thoughtful analysis can have on business outcomes.
-                </p>
-            </article>
-        </section>
-    </main>
+    <!-- ── CERTIFICATIONS ── -->
+    <section class="certifications">
+      <div class="container">
+        <h2 data-animate>Certifications.</h2>
+        <div class="cert-grid" data-animate>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Meenakshi Rajeev Nair</p>
-    </footer>
+          <div class="cert-item">
+            <span class="cert-year">2025</span>
+            <span class="cert-name">Oracle Cloud Infrastructure — Data Science Professional</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-year">2025</span>
+            <span class="cert-name">Oracle Cloud Infrastructure — Generative AI Professional</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-year">2025</span>
+            <span class="cert-name">Oracle Cloud Infrastructure — Certified AI Foundations Associate</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-year">2023</span>
+            <span class="cert-name">Microsoft AZ-900 — Azure Fundamentals</span>
+          </div>
 
-    <script src="script.js"></script>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PERSONAL NOTE ── -->
+    <section class="personal-note">
+      <div class="container">
+        <span class="eyebrow">Beyond Work</span>
+        <blockquote data-animate>
+          Outside of work, I'm usually discovering <em>new music</em> or reading
+          the kind of long-form writing that makes you rethink how systems —
+          and people — actually work. It's the same instinct that drives
+          everything else I do: there's always a better question to ask, and
+          usually a more elegant answer waiting if you look closely enough.
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <p class="footer-copy">© <span id="footer-year"></span> Meenakshi Rajeev Nair</p>
+        <ul class="footer-links">
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
