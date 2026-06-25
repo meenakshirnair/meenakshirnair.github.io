@@ -1,118 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meenakshi Rajeev Nair | Business Analyst</title>
-    <meta name="description" content="Business Analyst transforming data into strategic insights.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meenakshi Rajeev Nair — Business Analyst and Data Strategist who bridges technical depth and business clarity." />
+  <title>Meenakshi Rajeev Nair | Business Analyst & Data Strategist</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">meenakshi</a>
-            <ul class="nav-links">
-                <li><a href="/">home</a></li>
-                <li><a href="/work.html">work</a></li>
-                <li><a href="/about.html">about</a></li>
-                <li><a href="/contact.html">contact</a></li>
-            </ul>
+<body data-page="home">
+
+  <!-- ── NAV ── -->
+  <nav class="nav nav-dark" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Meenakshi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-eyebrow">Business Analyst &nbsp;·&nbsp; Data Strategist &nbsp;·&nbsp; Bridge Builder</span>
+        <h1>
+          The engineer who<br>
+          learned to ask <em>why.</em>
+        </h1>
+        <div class="hero-rule"></div>
+        <p class="hero-sub">The strategist who starts at the code level.</p>
+        <p class="hero-body">
+          I find the patterns others overlook, build clarity out of complexity,
+          and connect the dots between technical teams and the decisions that matter.
+        </p>
+        <div class="hero-actions">
+          <a href="work.html" class="btn btn-copper">View My Work</a>
+          <!-- TODO: Add your resume PDF to the root of your repo and update this link -->
+          <a href="resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download Resume</a>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <!-- Main Content -->
-    <main class="container">
-        <section class="intro">
-            <h1 class="fade-in-up">meenakshi</h1>
-            <p class="fade-in-up" style="animation-delay: 0.1s;">Business Analyst | Data Strategist | Problem Solver</p>
-            <p class="description fade-in-up" style="animation-delay: 0.2s;">
-                I transform ambiguous business problems into structured analytical frameworks. 
-                With a foundation in software engineering and expertise in business analysis, 
-                I bridge the gap between technical teams and business stakeholders.
+    <!-- ── INTRO ── -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div data-animate>
+            <p class="pull-quote">
+              "I connect the dots<br>others don't see —<br>then <em>build the bridge.</em>"
             </p>
-        </section>
+          </div>
+          <div class="intro-body" data-animate>
+            <p>
+              I started as a software engineer, but I kept noticing things engineers aren't
+              supposed to notice — broken processes nobody questioned, data that told a
+              different story than everyone assumed, workflows that turned out to be people
+              problems wearing a technical costume.
+            </p>
+            <p>
+              Eventually, the question behind the code mattered more than the code itself.
+              That realization led me to Arizona State University's W.&nbsp;P.&nbsp;Carey School
+              of Business, a 4.0 GPA, and a capstone that won the <strong>Outstanding Capstone
+              Team Award</strong>.
+            </p>
+            <p>
+              I'm now looking for a team where asking <em>why</em> is part of the job description.
+            </p>
+            <a href="about.html" class="text-link">Read my full story ›</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="featured-work">
-            <h2 class="fade-in-up">Featured Work</h2>
-            <div class="work-grid">
-                <article class="work-item">
-                    <div class="work-marker">→</div>
-                    <h3><a href="https://github.com/meenakshirnair/capstone" target="_blank" rel="noopener noreferrer">Enterprise Analytics Capstone</a></h3>
-                    <p>Translated business problems into analytical frameworks using SQL and Python.</p>
-                    <span class="tech">SQL • Python • Analytics</span>
-                </article>
+    <!-- ── FEATURED WORK ── -->
+    <section class="featured-work">
+      <div class="container">
+        <div class="section-hd" data-animate>
+          <div>
+            <span class="eyebrow">Selected Work</span>
+            <h2>Projects that shaped my thinking.</h2>
+          </div>
+          <a href="work.html" class="text-link">All projects ›</a>
+        </div>
 
-                <article class="work-item">
-                    <div class="work-marker">→</div>
-                    <h3><a href="https://github.com/meenakshirnair/final-project-adm" target="_blank" rel="noopener noreferrer">AI Request Routing Optimization</a></h3>
-                    <p>Built optimization model for cost reduction and SLA compliance using linear programming.</p>
-                    <span class="tech">Optimization • Python • Gurobi</span>
-                </article>
+        <div class="work-grid">
 
-                <article class="work-item">
-                    <div class="work-marker">→</div>
-                    <h3><a href="https://github.com/meenakshirnair/final-project-DPA" target="_blank" rel="noopener noreferrer">Customer Churn Prediction</a></h3>
-                    <p>Developed ML models achieving 84% churn prediction and 81% rent forecasting accuracy.</p>
-                    <span class="tech">Machine Learning • SMOTE • Random Forest</span>
-                </article>
-
-                <article class="work-item">
-                    <div class="work-marker">→</div>
-                    <h3><a href="https://github.com/meenakshirnair/Calcount" target="_blank" rel="noopener noreferrer">CalCount App</a></h3>
-                    <p>Designed mobile app with predictive analytics roadmap for health tracking.</p>
-                    <span class="tech">Mobile • Time-Series • Forecasting</span>
-                </article>
+          <!-- Card 1 -->
+          <article class="work-card" data-animate>
+            <span class="wc-eye">Analytics &nbsp;·&nbsp; 2025</span>
+            <h3 class="wc-title">Enterprise Business Analytics Capstone</h3>
+            <span class="award-badge">&#9733; Outstanding Capstone Award</span>
+            <p class="wc-desc">
+              Translated complex, multi-source business data into strategic frameworks and
+              interactive dashboards. Recognised for exceptional clarity in communicating
+              insight to decision-makers.
+            </p>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">Dashboards</span>
+              <span class="tag">Business Intelligence</span>
             </div>
-            <a href="/work.html" class="view-more">view more →</a>
-        </section>
+            <a href="https://github.com/meenakshirnair/capstone" class="wc-link" target="_blank" rel="noopener">
+              View on GitHub ›
+            </a>
+          </article>
 
-        <section class="skills-preview">
-            <h2 class="fade-in-up">Skills</h2>
-            <div class="skills-columns">
-                <div class="skill-column">
-                    <h3>Business Analysis</h3>
-                    <ul>
-                        <li>Requirements Gathering</li>
-                        <li>Stakeholder Management</li>
-                        <li>KPI Definition</li>
-                        <li>Process Mapping</li>
-                    </ul>
-                </div>
-                <div class="skill-column">
-                    <h3>Data & Analytics</h3>
-                    <ul>
-                        <li>SQL & Python</li>
-                        <li>Time-Series Forecasting</li>
-                        <li>Cohort Analysis</li>
-                        <li>A/B Testing</li>
-                    </ul>
-                </div>
-                <div class="skill-column">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Tableau & Power BI</li>
-                        <li>Excel (Advanced)</li>
-                        <li>Azure DevOps</li>
-                        <li>Git & Version Control</li>
-                    </ul>
-                </div>
+          <!-- Card 2 -->
+          <article class="work-card" data-animate>
+            <span class="wc-eye">Machine Learning &nbsp;·&nbsp; 2024</span>
+            <h3 class="wc-title">Employee Attrition Prediction</h3>
+            <p class="wc-desc">
+              HR analytics model achieving 91.9% accuracy and AUC 0.97 across 1,470 employee
+              records. Surfaced critical attrition drivers — job involvement, work-life balance,
+              and stock options — to inform retention strategy.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">SMOTE</span>
+              <span class="tag">AUC 0.97</span>
+              <span class="tag">HR Analytics</span>
             </div>
-        </section>
+            <a href="https://github.com/meenakshirnair/final-project-MLB" class="wc-link" target="_blank" rel="noopener">
+              View on GitHub ›
+            </a>
+          </article>
 
-        <section class="cta fade-in-up">
-            <h2>Let's Connect</h2>
-            <p>Interested in discussing analytics or collaboration?</p>
-            <a href="/contact.html" class="cta-button">get in touch</a>
-        </section>
-    </main>
+          <!-- Card 3 -->
+          <article class="work-card" data-animate>
+            <span class="wc-eye">Optimisation &nbsp;·&nbsp; 2024</span>
+            <h3 class="wc-title">AI Request Routing Optimisation</h3>
+            <p class="wc-desc">
+              Built a dynamic routing model to minimise compute cost while maintaining SLA
+              compliance across AI backends. Applied linear programming to evaluate real-world
+              trade-offs between cost, latency, and capacity.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Optimisation</span>
+              <span class="tag">Gurobi</span>
+              <span class="tag">SLA</span>
+            </div>
+            <a href="https://github.com/meenakshirnair/final-project-adm" class="wc-link" target="_blank" rel="noopener">
+              View on GitHub ›
+            </a>
+          </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Meenakshi Rajeev Nair</p>
-    </footer>
+          <!-- Card 4 -->
+          <article class="work-card" data-animate>
+            <span class="wc-eye">Product &nbsp;·&nbsp; 2025–2026</span>
+            <h3 class="wc-title">CalCount — Calorie Tracking App</h3>
+            <p class="wc-desc">
+              Full-stack iOS app for nutrition tracking with a predictive modelling roadmap.
+              Architected the backend for time-series weight forecasting and designed an
+              intuitive interface around how people actually log food.
+            </p>
+            <div class="tags">
+              <span class="tag">iOS</span>
+              <span class="tag">Swift</span>
+              <span class="tag">Time-Series</span>
+              <span class="tag">Predictive Analytics</span>
+            </div>
+            <a href="https://github.com/meenakshirnair/Calcount" class="wc-link" target="_blank" rel="noopener">
+              View on GitHub ›
+            </a>
+          </article>
 
-    <script src="script.js"></script>
+        </div>
+
+        <div class="view-all-wrap" data-animate>
+          <a href="work.html" class="text-link">See all 7 projects ›</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERTISE ── -->
+    <section class="expertise">
+      <div class="container">
+        <div class="expertise-hd" data-animate>
+          <span class="eyebrow">Expertise</span>
+          <h2>Where I do my best work.</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group" data-animate>
+            <h3>Business Analysis</h3>
+            <ul>
+              <li>Requirements Gathering</li>
+              <li>Stakeholder Management</li>
+              <li>KPI Definition</li>
+              <li>Process Mapping</li>
+              <li>Decision Support</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-animate>
+            <h3>Data &amp; Analytics</h3>
+            <ul>
+              <li>SQL &amp; Python</li>
+              <li>Cohort Analysis</li>
+              <li>A/B Testing</li>
+              <li>Time-Series Forecasting</li>
+              <li>Exploratory Analysis</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-animate>
+            <h3>Visualisation &amp; BI</h3>
+            <ul>
+              <li>Tableau</li>
+              <li>Power BI</li>
+              <li>Grafana</li>
+              <li>Excel (Advanced)</li>
+              <li>Executive Reporting</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-animate>
+            <h3>Technology</h3>
+            <ul>
+              <li>Azure Cloud &amp; AI</li>
+              <li>ETL Pipelines</li>
+              <li>Data Modelling</li>
+              <li>Azure DevOps</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONNECT ── -->
+    <section class="connect-strip">
+      <div class="container">
+        <span class="eyebrow">Let's Talk</span>
+        <h2>Looking for a team where asking <em>why</em> is part of the job.</h2>
+        <div class="connect-links">
+          <!-- TODO: Replace href with your LinkedIn profile URL -->
+          <a href="#" class="c-link" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/meenakshirnair" class="c-link" target="_blank" rel="noopener">GitHub ↗</a>
+          <!-- TODO: Replace href with mailto:your@email.com -->
+          <a href="#" class="c-link">Email →</a>
+          <!-- TODO: Add resume.pdf to your repo root -->
+          <a href="resume.pdf" class="c-link" target="_blank" rel="noopener">Resume ↓</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <p class="footer-copy">© <span id="footer-year"></span> Meenakshi Rajeev Nair</p>
+        <ul class="footer-links">
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
