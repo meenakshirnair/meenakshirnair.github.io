@@ -801,7 +801,68 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 .cc-action:hover { gap: 0.5rem; color: #B87A5A; }
 
-/* ── FOOTER ── */
+/* ── SKILL LINKS ── */
+.skill-group li a.skill-link {
+  color: var(--c-ash);
+  display: block;
+  transition: color var(--dur) var(--ease);
+  cursor: pointer;
+}
+.skill-group li a.skill-link:hover {
+  color: var(--c-copper);
+}
+
+/* ── FILTER BANNER (work page) ── */
+.filter-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--c-copper-dim);
+  border: 1px solid rgba(160,105,74,0.22);
+  border-radius: var(--r);
+  padding: 0.8rem 1.4rem;
+  margin-bottom: 2.5rem;
+}
+.filter-banner-text {
+  font-size: 0.82rem;
+  color: var(--c-ash);
+}
+.filter-banner-text strong {
+  color: var(--c-copper);
+  font-weight: 700;
+}
+.filter-clear {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--c-ash);
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--dur) var(--ease);
+  white-space: nowrap;
+}
+.filter-clear:hover {
+  color: var(--c-ink);
+  border-color: var(--c-rule);
+  background: rgba(160,105,74,0.08);
+}
+
+/* ── PROJECT FILTER STATES ── */
+.project-item {
+  transition: opacity 0.3s var(--ease);
+}
+.project-item.proj-dimmed {
+  opacity: 0.18;
+  pointer-events: none;
+}
+.project-item.proj-matched {
+  opacity: 1;
+}
+
+
 footer {
   padding: 2.5rem 0;
   border-top: 1px solid var(--c-rule);
