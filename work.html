@@ -122,28 +122,41 @@
           </div>
         </article>
 
-        <!-- 3. GTM Stack -->
+        <!-- 3. GTM Automation Stack -->
         <article class="project-item" data-animate>
           <div class="project-year">2025</div>
           <div class="project-body">
             <h3>GTM Automation Stack</h3>
+            <span class="award-badge">&#9654; In Production</span>
             <div class="tags">
-              <span class="tag">Clay</span>
-              <span class="tag">Claygent</span>
               <span class="tag">Claude API</span>
               <span class="tag">Make</span>
-              <span class="tag">AI Agents</span>
-              <span class="tag">GTM Engineering</span>
+              <span class="tag">Apollo</span>
+              <span class="tag">Apify</span>
+              <span class="tag">Mailmeteor</span>
+              <span class="tag">n8n</span>
+              <span class="tag">Puppeteer</span>
+              <span class="tag">Python</span>
+              <span class="tag">REST APIs</span>
             </div>
             <p class="project-desc">
-              Built an end-to-end go-to-market automation pipeline using Clay enrichment
-              tables and Claygent prompts for intelligent lead research, a Claude API
-              layer for custom qualification logic, and Make (formerly Integromat) for
-              workflow orchestration. The system automates prospecting workflows that
-              previously required hours of manual research per lead, compressing that
-              to minutes at scale. It covers the full GTM stack: enrichment, reasoning,
-              and qualification.
-              <!-- TODO: Add your specific time-saved metric here, e.g. "reduced research time from 40 min to 4 min per lead" -->
+              A personal end-to-end outbound automation pipeline built from scratch and
+              running in production for over a year. Apify handles daily prospect sourcing,
+              Apollo runs waterfall enrichment, and a Puppeteer layer calls the Claude API
+              to research each account, build multi-source context, and generate personalized
+              outreach copy per record with structured output constraints and fallback logic.
+              Make orchestrates the full pipeline with branching logic, error handling,
+              retries, and webhook triggers.
+            </p>
+            <p class="project-desc">
+              Diagnosed and resolved three post-launch failure classes: silent Puppeteer DOM
+              failures passing empty fields downstream, Claude hallucinating on incomplete
+              inputs (fixed with structured output schema), and Make masking partial API
+              errors as successes (fixed with secondary output validation per module). Each
+              fix is documented.
+            </p>
+            <p class="project-desc" style="color:var(--c-ash);font-style:italic;font-size:0.82rem;">
+              No GitHub link. This runs against live data and production credentials.
             </p>
           </div>
         </article>
